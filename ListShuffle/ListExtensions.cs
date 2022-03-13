@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
+using ThreadSafeRandomizer;
 
 namespace ListShuffle
 {
@@ -21,7 +21,7 @@ namespace ListShuffle
             while (n > 1)
             {
                 n--;
-                int k = ThreadSafeRandom.Next(n + 1);
+                int k = ThreadSafeRandom.Instance.Next(n + 1);
                 (list[n], list[k]) = (list[k], list[n]);
             }
         }
