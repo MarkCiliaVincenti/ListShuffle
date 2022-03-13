@@ -17,7 +17,13 @@ namespace ListShuffle
         public static void Shuffle<T>(this IList<T> list)
         {
             if (list == null) throw new ArgumentNullException(nameof(list));
-            list = list.OrderBy(i => ThreadSafeRandom.Next()).ToList();
+            int n = list.Count;
+            while (n > 1)
+            {
+                n--;
+                int k = ThreadSafeRandom.Next(n + 1);
+                (list[n], list[k]) = (list[k], list[n]);
+            }
         }
     }
 }

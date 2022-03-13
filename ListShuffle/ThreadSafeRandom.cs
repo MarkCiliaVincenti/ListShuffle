@@ -16,9 +16,9 @@ namespace ListShuffle
             return new Random(seed);
         });
 
-        public static int Next()
+        public static int Next(int maxValue)
         {
-            return _local.Value.Next();
+            return _local.Value.Next(maxValue);
         }
     }
 }
