@@ -1,21 +1,21 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFramework>netstandard2.0</TargetFramework>
+		<TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
 		<Authors>Mark Cilia Vincenti</Authors>
 		<RepositoryUrl>https://github.com/MarkCiliaVincenti/ListShuffle.git</RepositoryUrl>
 		<PackageProjectUrl>https://github.com/MarkCiliaVincenti/ListShuffle</PackageProjectUrl>
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
-		<Version>1.0.5</Version>
+		<Version>1.0.6</Version>
 		<PackageIcon>logo.png</PackageIcon>
-		<PackageReleaseNotes>Added dependency on ThreadSafeRandomizer.</PackageReleaseNotes>
-		<Description>Thread-safe list shuffle extension library, using Fisher-Yates shuffle.</Description>
+		<PackageReleaseNotes>Added crtoptional cryptographically-striong shuffle.</PackageReleaseNotes>
+		<Description>Thread-safe list shuffle extension library, using Fisher-Yates shuffle and optional cryptographically-strong random.</Description>
 		<Copyright>© 2022 Mark Cilia Vincenti</Copyright>
-		<PackageTags>list,shuffle,shuffler,extension,threadsafe,thread-safe</PackageTags>
+		<PackageTags>list,shuffle,shuffler,extension,threadsafe,thread-safe,</PackageTags>
 		<RepositoryType>git</RepositoryType>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-		<AssemblyVersion>1.0.5.0</AssemblyVersion>
-		<FileVersion>1.0.5.0</FileVersion>
+		<AssemblyVersion>1.0.6.0</AssemblyVersion>
+		<FileVersion>1.0.6.0</FileVersion>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<IsPackable>true</IsPackable>
 		<EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
@@ -44,7 +44,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <PackageReference Include="ThreadSafeRandomizer" Version="1.0.2" />
+	  <PackageReference Include="ThreadSafeRandomizer" Version="1.0.3" />
 	</ItemGroup>
 
 </Project>
