@@ -41,7 +41,7 @@ namespace ListShuffle
 #if NETSTANDARD2_0
             using (var generator = RandomNumberGenerator.Create())
 #endif
-                while (n > 1)
+            while (n > 1)
             {
                 n--;
 
