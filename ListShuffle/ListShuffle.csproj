@@ -8,7 +8,7 @@
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
 		<Version>1.0.6</Version>
 		<PackageIcon>logo.png</PackageIcon>
-		<PackageReleaseNotes>Added crtoptional cryptographically-striong shuffle.</PackageReleaseNotes>
+		<PackageReleaseNotes>Added optional cryptographically-strong shuffle.</PackageReleaseNotes>
 		<Description>Thread-safe list shuffle extension library, using Fisher-Yates shuffle and optional cryptographically-strong random.</Description>
 		<Copyright>© 2022 Mark Cilia Vincenti</Copyright>
 		<PackageTags>list,shuffle,shuffler,extension,threadsafe,thread-safe,</PackageTags>
