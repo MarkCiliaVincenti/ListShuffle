@@ -6,18 +6,22 @@
 		<RepositoryUrl>https://github.com/MarkCiliaVincenti/ListShuffle.git</RepositoryUrl>
 		<PackageProjectUrl>https://github.com/MarkCiliaVincenti/ListShuffle</PackageProjectUrl>
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
-		<Version>1.0.6</Version>
+		<Version>1.0.7</Version>
 		<PackageIcon>logo.png</PackageIcon>
-		<PackageReleaseNotes>Added optional cryptographically-strong shuffle.</PackageReleaseNotes>
+		<PackageReleaseNotes>Enabled trimming.</PackageReleaseNotes>
 		<Description>Thread-safe list shuffle extension library, using Fisher-Yates shuffle and optional cryptographically-strong random.</Description>
 		<Copyright>© 2022 Mark Cilia Vincenti</Copyright>
 		<PackageTags>list,shuffle,shuffler,extension,threadsafe,thread-safe,</PackageTags>
 		<RepositoryType>git</RepositoryType>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-		<AssemblyVersion>1.0.6.0</AssemblyVersion>
-		<FileVersion>1.0.6.0</FileVersion>
+		<AssemblyVersion>1.0.7.0</AssemblyVersion>
+		<FileVersion>1.0.7.0</FileVersion>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<IsPackable>true</IsPackable>
+		<IsTrimmable>true</IsTrimmable>
+		<EnableTrimAnalyzer>true</EnableTrimAnalyzer>
+		<PublishTrimmed>true</PublishTrimmed>
+		<TrimmerDefaultAction>link</TrimmerDefaultAction>		
 		<EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
 		<EnableNETAnalyzers>True</EnableNETAnalyzers>
 		<AnalysisLevel>latest</AnalysisLevel>
@@ -44,7 +48,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <PackageReference Include="ThreadSafeRandomizer" Version="1.0.3" />
+	  <PackageReference Include="ThreadSafeRandomizer" Version="1.0.4" />
 	</ItemGroup>
 
 </Project>
