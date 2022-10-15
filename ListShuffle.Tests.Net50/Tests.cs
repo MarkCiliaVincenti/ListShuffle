@@ -1,10 +1,10 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace ListShuffle.Tests
+namespace ListShuffle.Tests.Net50
 {
     public class Tests
     {
