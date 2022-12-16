@@ -1,5 +1,5 @@
 # ![ListShuffle](https://raw.githubusercontent.com/MarkCiliaVincenti/ListShuffle/master/logo32.png) ListShuffle
- [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/MarkCiliaVincenti/ListShuffle/.NET?logo=github&style=for-the-badge)](https://actions-badge.atrox.dev/MarkCiliaVincenti/ListShuffle/goto?ref=master) [![Nuget](https://img.shields.io/nuget/v/ListShuffle?label=ListShuffle&logo=nuget&style=for-the-badge)](https://www.nuget.org/packages/ListShuffle) [![Nuget](https://img.shields.io/nuget/dt/ListShuffle?logo=nuget&style=for-the-badge)](https://www.nuget.org/packages/ListShuffle)
+ [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/MarkCiliaVincenti/ListShuffle/dotnet.yml?branch=master&logo=github&style=for-the-badge)](https://actions-badge.atrox.dev/MarkCiliaVincenti/ListShuffle/goto?ref=master) [![Nuget](https://img.shields.io/nuget/v/ListShuffle?label=ListShuffle&logo=nuget&style=for-the-badge)](https://www.nuget.org/packages/ListShuffle) [![Nuget](https://img.shields.io/nuget/dt/ListShuffle?logo=nuget&style=for-the-badge)](https://www.nuget.org/packages/ListShuffle)
 
 Thread-safe list shuffle extension library, using Fisher-Yates shuffle and optional cryptographically-strong random.
 
