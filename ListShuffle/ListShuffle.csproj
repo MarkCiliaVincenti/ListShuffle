@@ -5,17 +5,18 @@
 		<Authors>Mark Cilia Vincenti</Authors>
 		<RepositoryUrl>https://github.com/MarkCiliaVincenti/ListShuffle.git</RepositoryUrl>
 		<PackageProjectUrl>https://github.com/MarkCiliaVincenti/ListShuffle</PackageProjectUrl>
-		<PackageLicenseFile>LICENSE</PackageLicenseFile>
-		<Version>1.1.2</Version>
+		<Copyright>MIT</Copyright>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<Version>1.1.3</Version>
 		<PackageIcon>logo.png</PackageIcon>
-		<PackageReleaseNotes>Micro performance improvements.</PackageReleaseNotes>
+		<PackageReleaseNotes>Bumping dependencies, updated licensing, fixed README shields issue.</PackageReleaseNotes>
 		<Description>Thread-safe list shuffle extension library, using Fisher-Yates shuffle and optional cryptographically-strong random.</Description>
 		<Copyright>© 2022 Mark Cilia Vincenti</Copyright>
-		<PackageTags>list,shuffle,shuffler,extension,threadsafe,thread-safe,</PackageTags>
+		<PackageTags>list,shuffle,shuffler,extension,threadsafe,thread-safe,random</PackageTags>
 		<RepositoryType>git</RepositoryType>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-		<AssemblyVersion>1.1.2.0</AssemblyVersion>
-		<FileVersion>1.1.2.0</FileVersion>
+		<AssemblyVersion>1.1.3.0</AssemblyVersion>
+		<FileVersion>1.1.3.0</FileVersion>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<IsPackable>true</IsPackable>
 		<IsTrimmable>true</IsTrimmable>
@@ -35,10 +36,6 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<None Include="..\LICENSE">
-			<Pack>True</Pack>
-			<PackagePath></PackagePath>
-		</None>
 		<None Include="..\README.md">
 			<Pack>True</Pack>
 			<PackagePath></PackagePath>
@@ -50,6 +47,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <PackageReference Include="ThreadSafeRandomizer" Version="1.1.1" />
+	  <PackageReference Include="ThreadSafeRandomizer" Version="1.1.2" />
 	</ItemGroup>
 </Project>
