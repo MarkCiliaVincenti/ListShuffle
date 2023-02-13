@@ -38,10 +38,13 @@ namespace ListShuffle
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void CryptoStrongShuffle<T>(this IList<T> list)
         {
-            if (list == null) throw new ArgumentNullException(nameof(list));
+            if (list == null)
+            {
+                throw new ArgumentNullException(nameof(list));
+            }
             int n = list.Count;
 #if NETSTANDARD2_0
-            using (var generator = RandomNumberGenerator.Create())
+            using var generator = RandomNumberGenerator.Create();
 #endif
             while (n > 1)
             {
