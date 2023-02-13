@@ -32,7 +32,7 @@ namespace ListShuffle.Tests.NetFramework
         {
             int totalFives = 0;
 
-            var result = Parallel.For(1, 100001, (_, _) =>
+            Parallel.For(1, 100001, (_, _) =>
             {
                 var list = new List<int>();
                 for (int j = 1; j <= 10; j++)
