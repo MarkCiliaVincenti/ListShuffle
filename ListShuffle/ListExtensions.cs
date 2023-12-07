@@ -20,7 +20,10 @@ namespace ListShuffle
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void Shuffle<T>(this IList<T> list)
         {
-            if (list == null) throw new ArgumentNullException(nameof(list));
+            if (list == null)
+            {
+                throw new ArgumentNullException(nameof(list));
+            }
             int n = list.Count;
             while (n > 1)
             {
@@ -38,6 +41,10 @@ namespace ListShuffle
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void Shuffle<T>(this T[] array)
         {
+            if (array == null)
+            {
+                throw new ArgumentNullException(nameof(array));
+            }
 #if NET8_0_OR_GREATER
             ThreadSafeRandom.Instance.Shuffle(array);
 #else
@@ -142,10 +149,6 @@ namespace ListShuffle
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void CryptoStrongShuffle<T>(this Span<T> span)
         {
-            if (span == null)
-            {
-                throw new ArgumentNullException(nameof(span));
-            }
             int n = span.Length;
 #if NETSTANDARD2_0
             using var generator = RandomNumberGenerator.Create();
