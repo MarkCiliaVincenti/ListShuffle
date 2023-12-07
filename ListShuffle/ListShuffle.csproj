@@ -1,23 +1,23 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
+		<TargetFrameworks>netstandard2.0;netstandard2.1;net8.0</TargetFrameworks>
 		<Authors>Mark Cilia Vincenti</Authors>
 		<LangVersion>8.0</LangVersion>
 		<RepositoryUrl>https://github.com/MarkCiliaVincenti/ListShuffle.git</RepositoryUrl>
 		<PackageProjectUrl>https://github.com/MarkCiliaVincenti/ListShuffle</PackageProjectUrl>
 		<Copyright>MIT</Copyright>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
-		<Version>1.1.5</Version>
+		<Version>2.0.0</Version>
 		<PackageIcon>logo.png</PackageIcon>
-		<PackageReleaseNotes>Code cleaning.</PackageReleaseNotes>
+		<PackageReleaseNotes>Added extension methods to allow shuffling of arrays and spans, apart from lists.</PackageReleaseNotes>
 		<Description>Thread-safe list shuffle extension library, using Fisher-Yates shuffle and optional cryptographically-strong random.</Description>
 		<Copyright>© 2023 Mark Cilia Vincenti</Copyright>
-		<PackageTags>list,shuffle,shuffler,extension,threadsafe,thread-safe,random</PackageTags>
+		<PackageTags>list,shuffle,shuffler,extension,threadsafe,thread-safe,random,array,span</PackageTags>
 		<RepositoryType>git</RepositoryType>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-		<AssemblyVersion>1.1.5.0</AssemblyVersion>
-		<FileVersion>1.1.5.0</FileVersion>
+		<AssemblyVersion>2.0.0.0</AssemblyVersion>
+		<FileVersion>2.0.0.0</FileVersion>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<IsPackable>true</IsPackable>
 		<EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
@@ -44,7 +44,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="DotNet.ReproducibleBuilds" Version="1.1.1" PrivateAssets="All"/>
+		<PackageReference Include="DotNet.ReproducibleBuilds" Version="1.1.1" PrivateAssets="All" />
+		<PackageReference Include="System.Memory" Version="4.5.5" />
 		<PackageReference Include="ThreadSafeRandomizer" Version="1.1.4" />
 	</ItemGroup>
 </Project>

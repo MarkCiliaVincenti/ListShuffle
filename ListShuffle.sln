@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ListShuffle.Tests.NetFramew
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ListShuffle.Tests.Net50", "ListShuffle.Tests.Net50\ListShuffle.Tests.Net50.csproj", "{DC428F1E-3C67-4F77-8351-EC58A3DE42D0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListShuffle.Tests.Net80", "ListShuffle.Tests.Net80\ListShuffle.Tests.Net80.csproj", "{5D1D2605-EEDF-4B97-BD29-001F41541C7D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{DC428F1E-3C67-4F77-8351-EC58A3DE42D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC428F1E-3C67-4F77-8351-EC58A3DE42D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC428F1E-3C67-4F77-8351-EC58A3DE42D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D1D2605-EEDF-4B97-BD29-001F41541C7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D1D2605-EEDF-4B97-BD29-001F41541C7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D1D2605-EEDF-4B97-BD29-001F41541C7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D1D2605-EEDF-4B97-BD29-001F41541C7D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

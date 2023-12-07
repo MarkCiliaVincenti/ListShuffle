@@ -5,7 +5,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace ListShuffle.Tests.Net50
+namespace ListShuffle.Tests.Net80
 {
     public class Tests
     {
