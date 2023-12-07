@@ -73,7 +73,7 @@ namespace ListShuffle
         }
 
         /// <summary>
-        /// Cryptographically-strong thread-safe shuffle of all items in the list. Less performant than <see cref="Shuffle"/>.
+        /// Cryptographically-strong thread-safe shuffle of all items in the list. Less performant than <see cref="Shuffle{T}(IList{T})"/>.
         /// </summary>
         /// <typeparam name="T">The generic type of the list to extend.</typeparam>
         /// <param name="list">The list to extend.</param>
@@ -104,7 +104,7 @@ namespace ListShuffle
         }
 
         /// <summary>
-        /// Cryptographically-strong thread-safe shuffle of all items in the array. Less performant than <see cref="Shuffle"/>.
+        /// Cryptographically-strong thread-safe shuffle of all items in the array. Less performant than <see cref="Shuffle{T}(T[])"/>.
         /// </summary>
         /// <typeparam name="T">The generic type of the array to extend.</typeparam>
         /// <param name="array">The array to extend.</param>
@@ -135,7 +135,7 @@ namespace ListShuffle
         }
 
         /// <summary>
-        /// Cryptographically-strong thread-safe shuffle of all items in the span. Less performant than <see cref="Shuffle"/>.
+        /// Cryptographically-strong thread-safe shuffle of all items in the span. Less performant than <see cref="Shuffle{T}(Span{T})"/>.
         /// </summary>
         /// <typeparam name="T">The generic type of the span to extend.</typeparam>
         /// <param name="span">The span to extend.</param>
