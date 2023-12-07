@@ -71,7 +71,7 @@ namespace ListShuffle.Tests.NetFramework
         {
             int totalFives = 0;
 
-            var result = Parallel.For(1, 100001, (_, _) =>
+            Parallel.For(1, 100001, (_, _) =>
             {
                 var list = new List<int>();
                 for (int j = 1; j <= 10; j++)
@@ -95,7 +95,7 @@ namespace ListShuffle.Tests.NetFramework
         {
             int totalFives = 0;
 
-            var result = Parallel.For(1, 100001, (_, _) =>
+            Parallel.For(1, 100001, (_, _) =>
             {
                 var array = new int[10];
                 for (int j = 0; j < 10;)
@@ -119,7 +119,7 @@ namespace ListShuffle.Tests.NetFramework
         {
             int totalFives = 0;
 
-            var result = Parallel.For(1, 100001, (_, _) =>
+            Parallel.For(1, 100001, (_, _) =>
             {
                 Span<int> span = stackalloc int[10];
                 for (int j = 0; j < 10;)
@@ -224,7 +224,7 @@ namespace ListShuffle.Tests.NetFramework
         {
             int totalFives = 0;
 
-            var result = Parallel.For(1, 100001, (_, _) =>
+            Parallel.For(1, 100001, (_, _) =>
             {
                 var array = new int[10];
                 for (int j = 0; j < 10;)
@@ -248,7 +248,7 @@ namespace ListShuffle.Tests.NetFramework
         {
             int totalFives = 0;
 
-            var result = Parallel.For(1, 100001, (_, _) =>
+            Parallel.For(1, 100001, (_, _) =>
             {
                 Span<int> span = stackalloc int[10];
                 for (int j = 0; j < 10;)
