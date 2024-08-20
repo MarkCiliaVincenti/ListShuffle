@@ -98,7 +98,7 @@ namespace ListShuffle
 #endif
             while (n > 1)
             {
-#if NETSTANDARD2_1 || NET8_0_OR_GREATER
+#if NETSTANDARD2_1 || NET6_0_OR_GREATER
                 int k = RandomNumberGenerator.GetInt32(n--);
 #else
                 var data = new byte[sizeof(uint)];
@@ -129,7 +129,7 @@ namespace ListShuffle
 #endif
             while (n > 1)
             {
-#if NETSTANDARD2_1 || NET8_0_OR_GREATER
+#if NETSTANDARD2_1 || NET6_0_OR_GREATER
                 int k = RandomNumberGenerator.GetInt32(n--);
 #else
                 var data = new byte[sizeof(uint)];
@@ -155,7 +155,7 @@ namespace ListShuffle
 #endif
             while (n > 1)
             {
-#if NETSTANDARD2_1 || NET8_0_OR_GREATER
+#if NETSTANDARD2_1 || NET6_0_OR_GREATER
                 int k = RandomNumberGenerator.GetInt32(n--);
 #else
                 var data = new byte[sizeof(uint)];
