@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FluentAssertions;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
@@ -265,5 +266,37 @@ public class Tests
         });
 
         Assert.InRange(totalFives, 5000, 20000);
+    }
+
+    [Fact]
+    public void Shuffle_List_Null_ThrowsArgumentNullException()
+    {
+        List<int> list = null!;
+        Action act = () => list.Shuffle();
+        act.Should().Throw<ArgumentNullException>().WithParameterName("list");
+    }
+
+    [Fact]
+    public void Shuffle_Array_Null_ThrowsArgumentNullException()
+    {
+        int[] array = null!;
+        Action act = () => array.Shuffle();
+        act.Should().Throw<ArgumentNullException>().WithParameterName("array");
+    }
+
+    [Fact]
+    public void CryptoStrongShuffle_List_Null_ThrowsArgumentNullException()
+    {
+        List<int> list = null!;
+        Action act = () => list.CryptoStrongShuffle();
+        act.Should().Throw<ArgumentNullException>().WithParameterName("list");
+    }
+
+    [Fact]
+    public void CryptoStrongShuffle_Array_Null_ThrowsArgumentNullException()
+    {
+        int[] array = null!;
+        Action act = () => array.CryptoStrongShuffle();
+        act.Should().Throw<ArgumentNullException>().WithParameterName("array");
     }
 }
