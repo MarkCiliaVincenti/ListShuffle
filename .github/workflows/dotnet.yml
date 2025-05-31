@@ -9,25 +9,39 @@ on:
 jobs:
   build:
 
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v4
-    - name: Setup .NET 5.0
-      uses: actions/setup-dotnet@v3
+    
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: 5.0.x
-    - name: Setup .NET 6.0
-      uses: actions/setup-dotnet@v3
-      with:
-        dotnet-version: 6.0.x 
-    - name: Setup .NET 8.0
-      uses: actions/setup-dotnet@v3
-      with:
-        dotnet-version: 8.0.x 
+        dotnet-version: |
+            8.0.x
+            9.0.x
+            
+    - name: Install Mono
+      run: |
+        sudo apt update
+        sudo apt install -y mono-complete
+        
     - name: Restore dependencies
       run: dotnet restore
+      
     - name: Build
-      run: dotnet build --no-restore
-    - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet build --no-restore --configuration Release
+      
+    - name: Test .NET 8.0
+      run: dotnet test --framework net8.0 --no-restore --configuration Release --verbosity normal --collect:"XPlat Code Coverage" --settings coverlet.runsettings
+
+    - name: Test .NET 9.0
+      run: dotnet test --framework net9.0 --no-restore --configuration Release --verbosity normal --collect:"XPlat Code Coverage" --settings coverlet.runsettings      
+      
+    - name: Test .NET Framework
+      run: dotnet test --framework net48 --no-restore --configuration Release --verbosity normal --collect:"XPlat Code Coverage" --settings coverlet.runsettings
+      
+    - name: Code Coverage
+      uses: codecov/codecov-action@v5
+      with:
+        token: ${{ secrets.CODECOV_TOKEN }}
