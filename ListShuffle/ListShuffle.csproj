@@ -7,7 +7,7 @@
 		<PackageProjectUrl>https://github.com/MarkCiliaVincenti/ListShuffle</PackageProjectUrl>
 		<Copyright>MIT</Copyright>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
-		<Version>2.1.1</Version>
+		<Version>2.1.2</Version>
 		<PackageIcon>logo.png</PackageIcon>
 		<PackageReleaseNotes>Dependency update.</PackageReleaseNotes>
 		<Description>Thread-safe list shuffle extension library, using Fisher-Yates shuffle and optional cryptographically-strong random.</Description>
@@ -15,8 +15,8 @@
 		<PackageTags>list,shuffle,shuffler,extension,threadsafe,thread-safe,random,array,span</PackageTags>
 		<RepositoryType>git</RepositoryType>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-		<AssemblyVersion>2.1.1.0</AssemblyVersion>
-		<FileVersion>2.1.1.0</FileVersion>
+		<AssemblyVersion>2.1.2.0</AssemblyVersion>
+		<FileVersion>2.1.2.0</FileVersion>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<IsPackable>true</IsPackable>
 		<EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
