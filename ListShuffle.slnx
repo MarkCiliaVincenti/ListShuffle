@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".github/workflows/dotnet.yml" />
+    <File Path="Directory.Build.props" />
+    <File Path="Directory.Packages.props" />
+  </Folder>
+  <Project Path="ListShuffle.Tests/ListShuffle.Tests.csproj" />
+  <Project Path="ListShuffle/ListShuffle.csproj" />
+</Solution>
